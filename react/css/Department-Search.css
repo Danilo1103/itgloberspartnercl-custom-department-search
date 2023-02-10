@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.containerPrincipal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerPrincipal :global(.itgloberspartnercl-custom-department-search-0-x-searchIcon) {
+    fill: #000;
+}
+
+.containerPrincipal :global(.vtex-styleguide-9-x-input),
+.containerPrincipal :global(.vtex-styleguide-9-x-input)::placeholder,
+.containerPrincipal :global(.itgloberspartnercl-custom-department-search-0-x-resultsItem) {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.containerPrincipal :global(.itgloberspartnercl-custom-department-search-0-x-resultsItem) {
+    color: #271fad;
+}
+
+.containerPrincipal :global(.itgloberspartnercl-custom-department-search-0-x-searchBarInnerContainer) {
+    margin-top: 25px;
+}
+
+.containerLoading {
+    margin: auto;
+}
