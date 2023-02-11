@@ -13,7 +13,8 @@
 
 .containerPrincipal :global(.vtex-styleguide-9-x-input),
 .containerPrincipal :global(.vtex-styleguide-9-x-input)::placeholder,
-.containerPrincipal :global(.itgloberspartnercl-custom-department-search-0-x-resultsItem) {
+.containerPrincipal :global(.itgloberspartnercl-custom-department-search-0-x-resultsItem),
+.containerLoading p {
     font-family: 'Lato', sans-serif;
     color: #000;
     font-size: 15px;

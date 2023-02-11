@@ -42,7 +42,7 @@ const DepartmentSearch = () => {
                 handleSetSlug={setSlugDepartment}
             />
             {
-                slugDepartment && (
+                lazyResults.data?.category?.children.length === 0 ? <div></div> : (
                     <div className={`flex ${handles["containerCategory"]}`}>
                         <CategoryGroup
                             categories={lazyResults.data?.category?.children}
@@ -52,15 +52,11 @@ const DepartmentSearch = () => {
                     </div>
                 )
             }
-            {
-                slugCategory && (
-                    <SearchBar
-                        customSearchPageUrl={slugCategory}
-                        placeholder="¿QUE BUSCAS?"
-                        displayMode="search-and-clear-buttons"
-                    />
-                )
-            }
+            <SearchBar
+                customSearchPageUrl={slugCategory}
+                placeholder="¿QUE BUSCAS?"
+                displayMode="search-and-clear-buttons"
+            />
         </div>
 }
 
