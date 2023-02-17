@@ -14,9 +14,8 @@ type Category = {
 }
 
 const DepartmentGroup = ({ departments, handleSetSlug }: Props) => {
-
     const handleChangeSlug = (event: any) => {
-        handleSetSlug(parseInt(event.target.value))
+        handleSetSlug(`${event.target.value}/$\{term\}?_q=$\{term\}&map=ft`)
     }
 
     const CSS_HANDLES = [
@@ -28,8 +27,8 @@ const DepartmentGroup = ({ departments, handleSetSlug }: Props) => {
     const departmentOptions: any = departments.map((department: Category) => {
         return (
             <option
-                value={department.id}
                 key={department.id}
+                value={department.slug}
                 className={`${handles["options--group"]}`}
             >
                 {department.name}
